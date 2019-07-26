@@ -1,6 +1,17 @@
 import { Route, Link, Switch } from "react-router-dom";
 import { Redirect } from 'react-router'
 
+function Status({ code, children }) {
+  return (
+    <Route
+      render={({ staticContext }) => {
+        if (staticContext) staticContext.status = code;
+        return children;
+      }}
+    />
+  );
+}
+
 function Index() {
   return <h2>Home</h2>;
 }
@@ -14,7 +25,12 @@ function Users() {
 }
 
 function NotFound() {
-  return <h2>Not found</h2>;
+  return (
+    <>
+      <Status code={404}/>
+      <h2>Not found</h2>;
+    </>
+  )
 }
 
 function App() {

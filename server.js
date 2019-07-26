@@ -14,9 +14,27 @@ async function start() {
       // https://reacttraining.com/react-router/web/guides/server-rendering
       req.locals = {};
       req.locals.context = {};
-      app.render(req, res, '/');
-    } catch(e) {
-      next(e)
+      const html = await app.renderToHTML(req, res, '/', {});
+
+      // Handle client redirects
+      const context = req.locals.context;
+      if (context.url) {
+        return res.redirect(context.url)
+      }
+
+      // Handle client response statuses
+      if (context.status) {
+        return res.status(context.status).send();
+      }
+
+      // Request was ended by the user
+      if (html === null) {
+        return;
+      }
+
+      app.sendHTML(req, res, html);
+    } catch (e) {
+      next(e);
     }
   });
 
