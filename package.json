@@ -1,0 +1,28 @@
+{
+  "name": "@toomuchdesign/next-react-router",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "!__tests__"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "start": "next",
+    "build": "next build",
+    "serve": "next start"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toomuchdesign/next-react-router.git"
+  },
+  "author": "Andrea Carraro <me@andreacarraro.it>",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
