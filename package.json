@@ -9,9 +9,9 @@
   ],
   "scripts": {
     "test": "echo \"No test specified\"",
-    "start": "next",
+    "start": "node server.js",
     "build": "next build",
-    "serve": "next start"
+    "serve": "NODE_ENV=production node server.js"
   },
   "keywords": [],
   "repository": {
@@ -21,6 +21,7 @@
   "author": "Andrea Carraro <me@andreacarraro.it>",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "next": "^9.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
