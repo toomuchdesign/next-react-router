@@ -1,4 +1,5 @@
 import { Route, Link, Switch } from "react-router-dom";
+import { Redirect } from 'react-router'
 
 function Index() {
   return <h2>Home</h2>;
@@ -31,6 +32,9 @@ function App() {
           <li>
             <Link to="/users/">Users</Link>
           </li>
+          <li>
+            <Link to="/people/">People</Link>
+          </li>
         </ul>
       </nav>
 
@@ -38,6 +42,7 @@ function App() {
         <Route path="/" exact component={Index} />
         <Route path="/about/" component={About} />
         <Route path="/users/" component={Users} />
+        <Redirect from="/people/" to="/users/" />
         <Route component={NotFound}/>
       </Switch>
     </div>

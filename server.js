@@ -10,6 +10,10 @@ async function start() {
   // Redirect all requests to main entrypoint pages/index.js
   server.get('/*', async (req, res, next) => {
     try {
+      // Provide react-router static router with a context object
+      // https://reacttraining.com/react-router/web/guides/server-rendering
+      req.locals = {};
+      req.locals.context = {};
       app.render(req, res, '/');
     } catch(e) {
       next(e)
