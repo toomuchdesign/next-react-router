@@ -262,6 +262,12 @@ When server rendering process encounters `<Status code={404}/>` component, the *
 
 I'm sure this setup is way far from being optimal. I'll be happy take into account any suggestions, feedbacks, improvements, ideas.
 
+### Issues
+
+- Static pages not being exported
+- Dev mode cannot build requested route on demand
+- `getInitialProps` not implemented
+
 [1-initial-setup]: https://github.com/toomuchdesign/next-react-router/tree/1-initial-setup
 [2-redirect-to-entrypoint]: https://github.com/toomuchdesign/next-react-router/tree/2-redirect-to-entrypoint
 [3-introduce-react-router]: https://github.com/toomuchdesign/next-react-router/tree/3-introduce-react-router
