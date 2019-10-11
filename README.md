@@ -90,7 +90,7 @@ export default App => {
             location={this.props.router.asPath}
           >
             <App {...this.props} />
-          </StaticRouterlocation={this.props.router.asPath}>
+          </StaticRouter>
         );
       }
       return (
