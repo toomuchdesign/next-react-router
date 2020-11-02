@@ -9,6 +9,10 @@ This document is available as:
 - [GitHub repository](https://github.com/toomuchdesign/next-react-router)
 - [dev.to post](https://dev.to/toomuchdesign/next-js-react-router-2kl8)
 
+## Disclaimer
+
+Next.js team strongly advises against this approach.
+
 ## Part one, basic setup
 
 ### 1 - Install Next.js
