@@ -9,9 +9,10 @@ This document is available as:
 - [GitHub repository](https://github.com/toomuchdesign/next-react-router)
 - [dev.to post](https://dev.to/toomuchdesign/next-js-react-router-2kl8)
 
-## Disclaimer
+## Disclaimers
 
-Next.js team strongly advises against this approach.
+- Next.js team strongly advises against this approach.
+- This experiment was carried out at the times of Next.js v9.3: The framework has changed a lot since then.
 
 ## Part one, basic setup
 
