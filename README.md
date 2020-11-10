@@ -12,7 +12,7 @@ This document is available as:
 ## Disclaimers
 
 - Next.js team strongly advises against this approach.
-- This experiment was carried out at the times of Next.js v9.3: The framework has changed a lot since then.
+- This experiment was carried out at the times of Next.js v9.3: the framework has changed a lot since then.
 
 ## Part one, basic setup
 
